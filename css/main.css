@@ -1,6 +1,7 @@
 body {
     background-color: green;
     color: white;
+    font-size: 1.5rem;
 }
 
 .add-btn {
@@ -13,4 +14,24 @@ body {
     vertical-align: middle;
     line-height: 1.1;
     margin-left: 10px;
+}
+
+.top, .bottom, h1 {
+    text-align: center;
+}
+
+.container {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.income {
+    float: left;
+    width: 475px;
+    margin-right: 50px;
+}
+
+.expenses {
+    float: left;
+    width: 475px;
 }
