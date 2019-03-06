@@ -1,0 +1,16 @@
+body {
+    background-color: green;
+    color: white;
+}
+
+.add-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
