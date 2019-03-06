@@ -81,7 +81,7 @@
              // Replace the placeholder text with user inputed data
              newHtml = html.replace('%id%', obj.id);
              newHtml = newHtml.replace('%description%', obj.description);
-             newHtml - newHtml.replace('%value%', obj.value);
+             newHtml = newHtml.replace('%value%', obj.value, type);
              // Insert the replaced HTML into the DOM
              document.querySelector(element).insertAdjacentHTML('beforeend', newHtml);
          },
