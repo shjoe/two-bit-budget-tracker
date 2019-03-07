@@ -1,19 +1,8 @@
+/* General */
 body {
     background-color: green;
     color: white;
     font-size: 1.5rem;
-}
-
-.add-btn {
-    font-size: 35px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.1;
-    margin-left: 10px;
 }
 
 .top, .bottom, h1 {
@@ -34,4 +23,17 @@ body {
 .expenses {
     float: left;
     width: 475px;
+}
+
+/* Buttons */
+.add-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
 }
