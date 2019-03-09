@@ -54,13 +54,10 @@
              ids = data.allItems[type].map(function (current) {
                  return current.id;
              });
-
              index = ids.indexOf(id);
-
              if (index !== -1) {
                  data.allItems[type].splice(index, 1);
              }
-
          },
          calculateBudget: function () {
              // 1. Calculate total income and expenses
