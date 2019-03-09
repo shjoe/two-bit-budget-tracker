@@ -1,12 +1,114 @@
 /* General */
-body {
-    background-color: green;
-    color: white;
-    font-size: 1.5rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.top, .bottom, h1 {
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
     text-align: center;
+    background-color: green;
+}
+
+body {
+    color: white;
+    background-color: green;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.right { float: right; }
+
+/* Top */
+.top {
+    height: 250px;
+    background-color: green;
+    position: relative;
+}
+
+.budget {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.budget-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.budget-value {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.budget-income,
+.budget-expenses {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.budget-income {
+    margin-bottom: 10px;
+}
+
+.budget-income-text,
+.budget-expenses-text {
+    float: left;
+    margin-top: 2px;
+}
+
+.budget-income-value,
+.budget-expenses-value {
+    float: left;
+}
+
+.budget-income-percentage,
+.budget-expenses-percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.budget-expenses-percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Bottom */
+.add {
+    text-align: center;
+}
+
+.add-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
 }
 
 .container {
@@ -25,15 +127,23 @@ body {
     width: 475px;
 }
 
-/* Buttons */
-.add-btn {
-    font-size: 35px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.1;
-    margin-left: 10px;
+.item {
+    padding: 13px;
+    border-bottom: 2px solid white;
+}
+
+.item-description {
+    float: left;
+}
+
+.item-value {
+    float: left;
+}
+
+.item-delete {
+    float: left;
+}
+
+.item-delete-btn {
+    margin-left: 5px;
 }
