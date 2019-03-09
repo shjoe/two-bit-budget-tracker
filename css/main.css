@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 /* General */
 * {
     margin: 0;
@@ -11,27 +13,29 @@
     clear: both;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    background-color: green;
+    background-color: #28c101;
+    font-weight: 300;
 }
 
 body {
     color: white;
-    background-color: green;
-    font-family: Open Sans;
+    background-color: #28c101;
     font-size: 16px;
     position: relative;
     height: 100vh;
-    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.right { float: right; }
+.right {
+    float: right;
+}
 
 /* Top */
 .top {
     height: 250px;
-    background-color: green;
+    background-color: #28c101;
     position: relative;
 }
 
@@ -44,17 +48,16 @@ body {
 }
 
 .budget-title {
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 300;
 }
 
 .budget-value {
-    font-weight: 300;
-    font-size: 46px;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 25px;
+    font-weight: 500;
 }
 
 .budget-income,
@@ -85,7 +88,6 @@ body {
     font-size: 11px;
     padding: 3px 0;
     margin-left: 10px;
-    font-weight: bold;
 }
 
 .budget-expenses-percentage {
